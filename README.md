@@ -2,9 +2,9 @@
 
 **A centralized arsenal of production-grade Agent Skills for autonomous AI agents.**
 
-This directory contains **Agent Skills** following the [Agent Skills open standard](https://agentskills.io). Skills provide domain-specific patterns, conventions, and guardrails that help AI coding assistants (Claude Code, OpenCode, Cursor, Antigravity, etc.) understand project-specific requirements.
+This repository contains **Agent Skills** following the [Agent Skills open standard](https://agentskills.io). Skills provide domain-specific patterns, conventions, and guardrails that help AI coding assistants (Claude Code, OpenCode, Cursor, Antigravity, etc.) understand project-specific requirements.
 
-This repository serves as a shared library of Agent Skills. It is designed to be included as a **Git Submodule** in your agent projects, ensuring that all your agents share the same "muscle memory" and reliable tooling.
+It serves as a shared library of Agent Skills. It is designed to be included as a **Git Submodule** in your agent projects, ensuring that all your agents share the same "muscle memory" and reliable tooling.
 
 ## What Are Skills?
 
