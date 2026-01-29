@@ -1,0 +1,5 @@
+# Tratar todos los archivos como texto y usar LF al guardar en el repo
+* text=auto eol=lf
+
+# Asegurar que los scripts de shell SIEMPRE usen LF (formato Linux)
+*.sh text eol=lf
