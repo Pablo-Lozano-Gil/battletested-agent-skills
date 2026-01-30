@@ -47,6 +47,8 @@ Read skills/{skill-name}/SKILL.md
 
 | Skill | Description |
 | ------- | ------------- |
+| skill-creator | Creates new AI agent skills following the Agent Skills spec |
+| skill-propagator | Propagates skill metadata to AGENTS.md Auto-invoke sections |
 
 ## Directory Structure
 
@@ -60,16 +62,93 @@ battletested-agent-skills/
 └── README.md                 # This file
 ```
 
+## 🚀 Integration Guide
+
+To use these skills in your new or existing project, do not copy-paste the files. Use Git Submodules to keep a live reference to this repository.
+
+### 1. Adding to a New Project
+
+#### Change directory to your agent reference folder
+
+| Agent/IDE | Reference folder |
+| ------- | ------------- |
+| OpenCode | .opencode |
+| Antigravity | .agent |
+| Claude Code | .claude |
+| Gemini CLI | .gemini |
+
+Antigravity is used as an example:
+
+```bash
+cd .agent/
+```
+
+#### Add this repository as a submodule in the skill folder
+
+Syntax: git submodule add `URL` `LOCAL_FOLDER_NAME`
+
+Using HTTPS
+
+```bash
+git submodule add https://github.com/Pablo-Lozano-Gil/battletested-agent-skills.git skills
+```
+
+Using SSH
+
+```bash
+git submodule add git@github.com:Pablo-Lozano-Gil/battletested-agent-skills.git skills
+```
+
+Your project structure will now look like this:
+
+```text
+.agent/
+├── .gitmodules
+└── skills/  <-- This folder is a direct link to this repo
+```
+
+### 2. Cloning a Project that uses this Repo
+
+If a teammate clones your agent project, the skills folder will initially be empty. They must run:
+º
+
+#### Clone with submodules using HTTPS
+
+```bash
+git clone --recursive https://github.com/Pablo-Lozano-Gil/battletested-agent-skills.git
+```
+
+#### Clone with submodules using SSH
+
+```bash
+git clone --recursive git@github.com:Pablo-Lozano-Gil/battletested-agent-skills.git
+```
+
+#### OR, if already cloned normally
+
+```bash
+git submodule update --init --recursive
+```
+
+### 3. Updating Skills
+
+To pull the latest "battle-tested" improvements from this central repo into your local project:
+
+```bash
+cd skills
+git pull origin main
+```
+
 ## Why Auto-invoke Sections?
 
 **Problem**: AI assistants (Claude, Gemini, etc.) don't reliably auto-invoke skills even when the `Trigger:` in the skill description matches the user's request. They treat skill suggestions as "background noise" and barrel ahead with their default approach.
 
 **Solution**: The `AGENTS.md` files in each directory contain an **Auto-invoke Skills** section that explicitly commands the AI: "When performing X action, ALWAYS invoke Y skill FIRST." This is a [known workaround](https://scottspence.com/posts/claude-code-skills-dont-auto-activate) that forces the AI to load skills.
 
-**Automation**: Instead of manually maintaining these sections, run `skill-sync` after creating or modifying a skill:
+**Automation**: Instead of manually maintaining these sections, run `skill-propagator` after creating or modifying a skill:
 
 ```bash
-skill-sync/assets/sync.sh
+skill-propagator/assets/propagate.sh
 ```
 
 This reads `metadata.scope` and `metadata.auto_invoke` from each `SKILL.md` and generates the Auto-invoke tables in the corresponding `AGENTS.md` files.
