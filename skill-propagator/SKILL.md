@@ -5,7 +5,7 @@ description: >
   Trigger: When updating skill metadata (metadata.scope/metadata.auto_invoke), regenerating Auto-invoke tables, or running skill-propagator/assets/propagate.sh (including --dry-run/--scope).
 license: Apache-2.0
 metadata:
-  author: Pablo Lozano [Based on Prowler's [skill-propagator](https://github.com/prowler-cloud/prowler/tree/master/skills/skill-propagator), licensed under Apache-2.0]
+  author: Pablo Lozano [Based on Prowler's [skill-sync](https://github.com/prowler-cloud/prowler/tree/master/skills/skill-propagator), licensed under Apache-2.0]
   version: "1.0"
   scope: [root]
   auto_invoke:
