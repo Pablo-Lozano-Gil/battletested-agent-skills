@@ -1,8 +1,6 @@
 ---
 name: skill-creator
-description: >
-  Creates new AI agent skills following the Agent Skills spec.
-  Trigger: When user asks to create a new skill, add agent instructions, or document patterns for AI.
+description: Creates new AI agent skills following the Agent Skills spec. Trigger: When user asks to create a new skill, add agent instructions, or document patterns for AI.
 license: Apache-2.0
 metadata:
   author: Pablo Lozano [Based on Prowler's [skill-creator](https://github.com/prowler-cloud/prowler/tree/master/skills/skill-creator), licensed under Apache-2.0]
