@@ -4,8 +4,13 @@ description: Analyzes PRD to propose relevant AI skills for a project. Trigger: 
 license: MIT
 metadata:
   author: Pablo Lozano
-  version: "0.2"
-allowed-tools: Read, Edit, Write, Glob, Grep, Bash, WebFetch, WebSearch, Task, context7_resolve-library-id, context7_query-docs
+  version: "0.3"
+  scope: [root]
+  auto_invoke:
+    - "After creating/modifying a PRD"
+    - "After using the brainstorming skill before the implementation begins"
+    - "User asks to propose skills based on a PRD or project description"
+allowed-tools: Read, Edit, Write, Glob, Grep, WebFetch, WebSearch, context7_resolve-library-id, context7_query-docs
 ---
 
 ## When to Use
