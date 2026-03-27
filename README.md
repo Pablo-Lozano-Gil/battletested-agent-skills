@@ -184,3 +184,5 @@ Read skill-creator/SKILL.md
 - [Agent Skills GitHub](https://github.com/anthropics/skills) - Example skills
 - [Claude Code Best Practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) - Skill authoring guide
 - [SKILLS](https://skills.sh) - Skills repository from Vercel
+
+<!-- Dependencies updated for security -->
