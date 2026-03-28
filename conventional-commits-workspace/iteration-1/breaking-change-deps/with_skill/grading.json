@@ -1,0 +1,29 @@
+{
+  "expectations": [
+    {
+      "text": "Commit message starts with 'chore(' or 'fix(' for dependencies/security",
+      "passed": true,
+      "evidence": "Commit message starts with 'chore(deps)!:'"
+    },
+    {
+      "text": "Commit message includes '!' for breaking change",
+      "passed": true,
+      "evidence": "'!' after scope in 'chore(deps)!:'"
+    },
+    {
+      "text": "Includes BREAKING CHANGE footer",
+      "passed": true,
+      "evidence": "BREAKING CHANGE footer present in commit message"
+    },
+    {
+      "text": "References issue #45 with 'fixes #45'",
+      "passed": true,
+      "evidence": "'fixes #45' in commit footer"
+    },
+    {
+      "text": "Handles multiple concerns (deps update + security fix + breaking change)",
+      "passed": true,
+      "evidence": "Commit addresses dependencies, security, breaking change, and issue reference"
+    }
+  ]
+}

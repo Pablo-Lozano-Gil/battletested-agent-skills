@@ -1,0 +1,29 @@
+{
+  "expectations": [
+    {
+      "text": "Commit message starts with 'feat(' indicating new feature",
+      "passed": true,
+      "evidence": "Commit message: 'feat(user-profile): add avatar upload and bio fields'"
+    },
+    {
+      "text": "Commit message includes scope 'user-profile' in parentheses",
+      "passed": true,
+      "evidence": "Scope '(user-profile)' found in commit message"
+    },
+    {
+      "text": "Description mentions 'avatar upload and bio fields'",
+      "passed": true,
+      "evidence": "Description includes 'avatar upload and bio fields'"
+    },
+    {
+      "text": "Follows Conventional Commits format correctly",
+      "passed": true,
+      "evidence": "Message matches Conventional Commits pattern"
+    },
+    {
+      "text": "Skill suggests appropriate type based on feature context",
+      "passed": false,
+      "evidence": "Baseline without skill does not suggest type"
+    }
+  ]
+}

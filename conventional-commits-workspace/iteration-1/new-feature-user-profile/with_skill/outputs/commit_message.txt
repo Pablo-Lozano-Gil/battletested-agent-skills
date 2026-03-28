@@ -1,0 +1,1 @@
+feat(user-profile): add avatar upload and bio fields

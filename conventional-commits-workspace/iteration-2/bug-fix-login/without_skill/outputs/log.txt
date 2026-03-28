@@ -1,0 +1,5 @@
+13056c6 fix(deps)!: update dependencies and fix security vulnerabilities
+c547b6f refactor(button): improve component structure and styling
+03f07da fix(login): allow special characters in form submission
+d3283f4 feat(skill-proposer): Add scope and auto_invoke metadata. Reduce allowed tools
+f5a3712 (feat) Add skill-proposer skill for PRD-based skill recommendations

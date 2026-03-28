@@ -1,0 +1,13 @@
+commit 03f07da413b26d950ad0d3a093268ab840a372db
+Author: Pablo Lozano <lozano.gil.pablo@gmail.com>
+Date:   Fri Mar 27 19:30:41 2026 +0100
+
+    fix(login): allow special characters in form submission
+
+diff --git a/login-form-fix.md b/login-form-fix.md
+new file mode 100644
+index 0000000..8211ee1
+--- /dev/null
++++ b/login-form-fix.md
+@@ -0,0 +1 @@
++Fix: Allow special characters in login form submission

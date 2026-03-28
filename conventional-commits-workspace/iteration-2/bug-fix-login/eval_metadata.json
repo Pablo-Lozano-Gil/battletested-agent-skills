@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "bug-fix-login",
+  "prompt": "I just fixed a bug in the login form where users couldn't submit with special characters. Can you commit these changes?",
+  "assertions": []
+}

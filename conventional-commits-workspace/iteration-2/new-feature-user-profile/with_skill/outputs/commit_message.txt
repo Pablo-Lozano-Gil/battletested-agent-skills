@@ -1,0 +1,7 @@
+feat(user-profile): add avatar upload and bio fields
+
+- Added avatar upload with image cropping and validation
+- Implemented bio fields with markdown support (500 character limit)
+- Updated User model with new profile fields
+- Created API endpoints at /api/user/profile
+- Added frontend components in src/components/profile/

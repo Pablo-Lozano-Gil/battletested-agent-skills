@@ -1,0 +1,7 @@
+git init
+git config user.name "Test User"
+git config user.email "test@example.com"
+mkdir -p models api/user src/components/profile
+touch models/User.js api/user/profile.js src/components/profile/AvatarUpload.js src/components/profile/BioField.js
+git add .
+git commit -F commit_msg.txt

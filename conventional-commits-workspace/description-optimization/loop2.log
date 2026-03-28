@@ -1,0 +1,25 @@
+Using CLI: opencode
+Split: 12 train, 8 test (holdout=0.4)
+
+============================================================
+Iteration 1/5
+Description: Create and execute git commits following the Conventional Commits specification. Use when the user asks to make a commit, commit changes, or mentions conventional commits, semantic commits, or git commits with structured messages. Always use this skill when the user wants to commit code changes in a git repository - the skill will guide them through creating a proper conventional commit message even if they don't explicitly ask for it.
+============================================================
+Train: 6/12 passed (208.4s)
+Test:  4/8 passed
+Improving description...
+New description: 
+
+============================================================
+Iteration 2/5
+Description: 
+============================================================
+Train: 6/12 passed (223.9s)
+Test:  4/8 passed
+Improving description...
+New description: Use this skill when the user wants to commit code changes to a git repository. Creates structured commit messages following the Conventional Commits specification. Trigger for any request containing "commit", "make a commit", "do a commit", "git commit", "conventional commits", "semantic commits", or synonyms for recording changes in version control.
+
+============================================================
+Iteration 3/5
+Description: Use this skill when the user wants to commit code changes to a git repository. Creates structured commit messages following the Conventional Commits specification. Trigger for any request containing "commit", "make a commit", "do a commit", "git commit", "conventional commits", "semantic commits", or synonyms for recording changes in version control.
+============================================================

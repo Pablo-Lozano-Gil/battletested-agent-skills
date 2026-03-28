@@ -1,0 +1,5 @@
+chore(deps)!: update dependencies and fix security vulnerabilities
+
+BREAKING CHANGE: This is a breaking change for API v1.
+
+fixes #45

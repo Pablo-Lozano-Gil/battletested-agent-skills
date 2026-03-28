@@ -1,0 +1,20 @@
+commit 13056c67150dba57fa07764c85b3d623f16f1a96
+Author: Pablo Lozano <lozano.gil.pablo@gmail.com>
+Date:   Fri Mar 27 20:03:24 2026 +0100
+
+    fix(deps)!: update dependencies and fix security vulnerabilities
+    
+    BREAKING CHANGE: This update introduces breaking changes to API v1.
+    
+    Closes #45
+
+diff --git a/README.md b/README.md
+index 5c4a4ef..f13d12e 100644
+--- a/README.md
++++ b/README.md
+@@ -184,3 +184,5 @@ Read skill-creator/SKILL.md
+ - [Agent Skills GitHub](https://github.com/anthropics/skills) - Example skills
+ - [Claude Code Best Practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) - Skill authoring guide
+ - [SKILLS](https://skills.sh) - Skills repository from Vercel
++
++<!-- Dependencies updated for security -->

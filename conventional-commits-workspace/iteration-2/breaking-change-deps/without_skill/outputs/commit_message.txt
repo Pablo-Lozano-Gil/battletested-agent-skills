@@ -1,0 +1,12 @@
+fix(deps)!: update dependencies and fix security vulnerabilities
+
+- Updated React to v18.3
+- Updated Node.js to 20.x
+- Fixed critical security vulnerability in authentication middleware (CVE-2024-12345)
+- Removed deprecated API v1 endpoints
+- Changed response formats for API v1
+- Performance improvements to database layer
+
+BREAKING CHANGE: This update introduces breaking changes to API v1. Removed deprecated endpoints and changed response formats.
+
+Closes #45

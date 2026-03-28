@@ -1,0 +1,12 @@
+{
+  "eval_id": 2,
+  "eval_name": "new-feature-user-profile",
+  "prompt": "Please make a conventional commit for the new user profile feature I just implemented. It includes avatar upload and bio fields.",
+  "assertions": [
+    "Commit message starts with 'feat(' indicating new feature",
+    "Commit message includes scope 'user-profile' in parentheses",
+    "Description mentions 'avatar upload and bio fields'",
+    "Follows Conventional Commits format correctly",
+    "Skill suggests appropriate type based on feature context"
+  ]
+}

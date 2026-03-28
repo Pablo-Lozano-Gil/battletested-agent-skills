@@ -1,0 +1,6 @@
+fix(deps)!: update dependencies and fix security vulnerabilities
+
+BREAKING CHANGE: This update introduces breaking changes to API v1.
+
+Closes #45
+

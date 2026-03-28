@@ -1,0 +1,29 @@
+{
+  "expectations": [
+    {
+      "text": "Commit message starts with 'fix(' indicating bug fix type",
+      "passed": true,
+      "evidence": "Commit message: 'fix(login): allow special characters in form submission'"
+    },
+    {
+      "text": "Commit message includes scope 'login' in parentheses",
+      "passed": true,
+      "evidence": "Scope '(login)' found in commit message"
+    },
+    {
+      "text": "Commit message follows Conventional Commits format: type(scope): description",
+      "passed": true,
+      "evidence": "Message matches pattern 'type(scope): description'"
+    },
+    {
+      "text": "Description uses imperative mood",
+      "passed": true,
+      "evidence": "Description 'allow special characters...' uses imperative mood"
+    },
+    {
+      "text": "Skill analyzes git diff before suggesting type",
+      "passed": false,
+      "evidence": "Baseline without skill does not perform git diff analysis"
+    }
+  ]
+}

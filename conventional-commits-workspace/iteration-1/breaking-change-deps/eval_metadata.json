@@ -1,0 +1,12 @@
+{
+  "eval_id": 4,
+  "eval_name": "breaking-change-deps",
+  "prompt": "I updated dependencies and fixed security vulnerabilities. This is a breaking change for API v1. Commit with conventional commits and reference issue #45.",
+  "assertions": [
+    "Commit message starts with 'chore(' or 'fix(' for dependencies/security",
+    "Commit message includes '!' for breaking change",
+    "Includes BREAKING CHANGE footer",
+    "References issue #45 with 'fixes #45'",
+    "Handles multiple concerns (deps update + security fix + breaking change)"
+  ]
+}

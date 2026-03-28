@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "new-feature-user-profile",
+  "prompt": "Please make a conventional commit for the new user profile feature I just implemented. The feature adds avatar upload functionality with image cropping and validation, plus bio fields with markdown support and character limits. I've updated the User model, added new API endpoints at /api/user/profile, and created frontend components in src/components/profile/. This is a new feature that should be well-documented for future reference.",
+  "assertions": []
+}

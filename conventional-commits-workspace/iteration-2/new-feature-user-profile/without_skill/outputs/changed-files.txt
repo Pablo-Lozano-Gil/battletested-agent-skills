@@ -1,0 +1,12 @@
+src/models/user.ts
+src/routes/user/profile.ts
+src/middleware/upload.ts
+src/services/image-cropping.ts
+src/utils/validation.ts
+src/components/profile/AvatarUpload.tsx
+src/components/profile/BioEditor.tsx
+src/components/profile/ProfileForm.tsx
+src/components/profile/index.ts
+src/types/profile.ts
+tests/user-profile.test.ts
+docs/user-profile.md

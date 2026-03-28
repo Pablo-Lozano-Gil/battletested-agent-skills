@@ -1,0 +1,45 @@
+{
+  "reviews": [
+    {
+      "run_id": "bug-fix-login-with_skill",
+      "feedback": "",
+      "timestamp": "2026-03-28T09:40:44.430Z"
+    },
+    {
+      "run_id": "bug-fix-login-without_skill",
+      "feedback": "",
+      "timestamp": "2026-03-28T09:40:44.430Z"
+    },
+    {
+      "run_id": "new-feature-user-profile-with_skill",
+      "feedback": "I see the result is very concise. Maybe we could give in the evaluation a bit more context and maybe improve the skill to include a bit more detail in the commit message as part of the commit body based on the context. I want the commits to be a bit more descriptive, as at the end they will be used for documenting the app",
+      "timestamp": "2026-03-28T09:40:44.430Z"
+    },
+    {
+      "run_id": "new-feature-user-profile-without_skill",
+      "feedback": "",
+      "timestamp": "2026-03-28T09:40:44.430Z"
+    },
+    {
+      "run_id": "refactor-button-spanish-with_skill",
+      "feedback": "Maybe we can reduce interactivity for the evaluation, making the evaluation message clearer and with more context so there is no need to ask the user.",
+      "timestamp": "2026-03-28T09:40:44.430Z"
+    },
+    {
+      "run_id": "refactor-button-spanish-without_skill",
+      "feedback": "",
+      "timestamp": "2026-03-28T09:40:44.430Z"
+    },
+    {
+      "run_id": "breaking-change-deps-with_skill",
+      "feedback": "Really good output. A bit more detail in the body of the commit message would be useful, but the evaluation text needs to include a bit more of context. In a real conversation, much more context about the feature will be available to the AI agent",
+      "timestamp": "2026-03-28T09:40:44.430Z"
+    },
+    {
+      "run_id": "breaking-change-deps-without_skill",
+      "feedback": "",
+      "timestamp": "2026-03-28T09:40:44.430Z"
+    }
+  ],
+  "status": "complete"
+}

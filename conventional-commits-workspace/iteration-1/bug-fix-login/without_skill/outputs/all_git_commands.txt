@@ -1,0 +1,11 @@
+git status
+git diff --cached
+git diff
+git log --oneline -5
+git status --porcelain
+git diff HEAD~1 HEAD --name-only
+git branch -a
+git status --ignored
+git add login-form-fix.md
+git commit -m "fix(login): allow special characters in form submission"
+git show --stat HEAD

@@ -1,0 +1,6 @@
+{
+  "eval_id": 4,
+  "eval_name": "breaking-change-deps",
+  "prompt": "I updated dependencies (React to v18.3, Node.js to 20.x) and fixed critical security vulnerabilities in the authentication middleware (CVE-2024-12345). This is a breaking change for API v1 because we removed deprecated endpoints and changed response formats. The update also includes performance improvements to the database layer. Commit with conventional commits and reference issue #45 which tracks this migration.",
+  "assertions": []
+}

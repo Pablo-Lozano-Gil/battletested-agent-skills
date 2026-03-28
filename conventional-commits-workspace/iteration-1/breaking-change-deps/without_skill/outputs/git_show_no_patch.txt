@@ -1,0 +1,9 @@
+commit 13056c67150dba57fa07764c85b3d623f16f1a96
+Author: Pablo Lozano <lozano.gil.pablo@gmail.com>
+Date:   Fri Mar 27 20:03:24 2026 +0100
+
+    fix(deps)!: update dependencies and fix security vulnerabilities
+    
+    BREAKING CHANGE: This update introduces breaking changes to API v1.
+    
+    Closes #45

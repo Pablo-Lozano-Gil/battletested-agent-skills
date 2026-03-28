@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Skill acknowledges partial commit request",
+      "passed": false,
+      "evidence": "Baseline without skill, not testing skill's partial commit handling"
+    },
+    {
+      "text": "Commit message type appropriate for security/performance improvements",
+      "passed": true,
+      "evidence": "Commit type 'fix' appropriate"
+    },
+    {
+      "text": "Scope includes 'auth' or 'middleware'",
+      "passed": true,
+      "evidence": "Scope '(auth)' present"
+    },
+    {
+      "text": "Description mentions race condition and rate limiting",
+      "passed": true,
+      "evidence": "Description mentions race condition and rate limiting"
+    },
+    {
+      "text": "Commit body provides details about the fixes",
+      "passed": true,
+      "evidence": "Commit body includes details about race condition fix and rate limiting"
+    },
+    {
+      "text": "Git commands target specific files or directory",
+      "passed": false,
+      "evidence": "No evidence of targeting specific files; likely used git add ."
+    },
+    {
+      "text": "Git commit executed successfully",
+      "passed": true,
+      "evidence": "Commit hash 2c9417e present"
+    }
+  ]
+}

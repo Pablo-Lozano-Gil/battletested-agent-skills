@@ -1,0 +1,12 @@
+{
+  "eval_id": 3,
+  "eval_name": "refactor-button-spanish",
+  "prompt": "haz un commit de los cambios en el componente Button que acabo de refactorizar. Usa conventional commits por favor.",
+  "assertions": [
+    "Skill handles Spanish prompt appropriately",
+    "Commit message starts with 'refactor(' indicating code refactoring",
+    "Commit message includes scope 'button' in parentheses",
+    "Description uses imperative mood",
+    "Follows Conventional Commits format"
+  ]
+}

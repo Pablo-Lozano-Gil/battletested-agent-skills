@@ -1,0 +1,5 @@
+git status
+git diff --cached --name-status
+git diff --cached
+git add user_profile.py
+git commit -m "feat(user-profile): add avatar upload and bio fields"

@@ -1,0 +1,5 @@
+commit f8d258b4d792caeb4d2bdaad8c537180fc3c365b
+Author: Pablo Lozano <lozano.gil.pablo@gmail.com>
+Date:   Sat Mar 28 11:18:16 2026 +0100
+
+    refactor(button): improve accessibility with ARIA roles, optimize performance with memoization, and reorganize code for maintainability

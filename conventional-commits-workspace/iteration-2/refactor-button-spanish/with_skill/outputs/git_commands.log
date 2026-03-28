@@ -1,0 +1,22 @@
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+$ git add src/components/Button/Button.tsx
+fatal: pathspec 'src/components/Button/Button.tsx' did not match any files
+
+$ git add src/components/Button/Button.test.tsx
+fatal: pathspec 'src/components/Button/Button.test.tsx' did not match any files
+
+$ git commit -m 'refactor(button): improve accessibility, performance, and maintainability
+
+- Add ARIA roles for better accessibility
+- Implement memoization for performance optimization
+- Reorganize code structure for improved maintainability
+- Update associated test files'
+error: no changes added to commit (use "git add" and/or "git commit -a")
+
+No changes to commit. Commit hash: N/A

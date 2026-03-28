@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "eval_name": "bug-fix-login",
+  "prompt": "I just fixed a bug in the login form where users couldn't submit with special characters. Can you commit these changes?",
+  "assertions": [
+    "Commit message starts with 'fix(' indicating bug fix type",
+    "Commit message includes scope 'login' in parentheses",
+    "Commit message follows Conventional Commits format: type(scope): description",
+    "Description uses imperative mood",
+    "Skill analyzes git diff before suggesting type"
+  ]
+}

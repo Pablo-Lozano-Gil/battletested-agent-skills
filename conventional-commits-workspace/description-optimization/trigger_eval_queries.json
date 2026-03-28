@@ -1,0 +1,82 @@
+[
+  {
+    "query": "I just finished fixing the login form bug where special characters weren't being escaped properly. Can you commit these changes for me?",
+    "should_trigger": true
+  },
+  {
+    "query": "Make a commit for the new user profile feature I implemented — it includes avatar upload with image cropping and bio fields with markdown support.",
+    "should_trigger": true
+  },
+  {
+    "query": "Use conventional commits to commit the refactored Button component. I added ARIA roles, memoization, and improved the styling structure.",
+    "should_trigger": true
+  },
+  {
+    "query": "haz un commit de los cambios en el componente Button que acabo de refactorizar. Le añadí roles ARIA y mejoré la estructura del código.",
+    "should_trigger": true
+  },
+  {
+    "query": "I want to create a semantic commit for the new API endpoint I just added at /api/user/profile. It handles POST requests with JSON validation.",
+    "should_trigger": true
+  },
+  {
+    "query": "Commit the changes in src/middleware/auth.js and src/middleware/rateLimit.js with a proper commit message. These are security improvements for race conditions and rate limiting.",
+    "should_trigger": true
+  },
+  {
+    "query": "Do a git commit for the bug fix in the login form. The issue was that special characters like < and > were causing XSS vulnerabilities.",
+    "should_trigger": true
+  },
+  {
+    "query": "I need to make a commit that follows the conventional commits specification. The changes are in the docs folder — updated README.md and added API documentation.",
+    "should_trigger": true
+  },
+  {
+    "query": "Commit these changes with a structured message. I updated dependencies (React v18.3, Node.js 20.x) and fixed a critical security vulnerability CVE-2024-12345.",
+    "should_trigger": true
+  },
+  {
+    "query": "Let's commit the updates to the README file. I added installation instructions and a troubleshooting section.",
+    "should_trigger": true
+  },
+  {
+    "query": "Can you check the git status for me? I'm not sure which files I've modified since my last commit.",
+    "should_trigger": false
+  },
+  {
+    "query": "What's the difference between my changes and the main branch? I want to see a diff of src/components/Button.tsx.",
+    "should_trigger": false
+  },
+  {
+    "query": "Create a new branch called feature/auth for implementing JWT authentication. I'll start working on it tomorrow.",
+    "should_trigger": false
+  },
+  {
+    "query": "Merge the feature/user-profile branch into main. There might be conflicts in package.json.",
+    "should_trigger": false
+  },
+  {
+    "query": "I need to push my commits to remote origin. The branch is feature/login-fix and I want to push it to GitHub.",
+    "should_trigger": false
+  },
+  {
+    "query": "Stash my current changes — I have to switch to another branch to fix a critical bug.",
+    "should_trigger": false
+  },
+  {
+    "query": "How do I revert a commit? I accidentally committed a debug log statement in production code (commit hash a1b2c3d).",
+    "should_trigger": false
+  },
+  {
+    "query": "Show me the git log for the last 10 commits. I need to see the history of changes to the auth middleware.",
+    "should_trigger": false
+  },
+  {
+    "query": "I want to rebase my branch onto main to clean up the commit history before creating a pull request.",
+    "should_trigger": false
+  },
+  {
+    "query": "Initialize a new git repository in the current directory. I'm starting a new project called 'invoice-generator'.",
+    "should_trigger": false
+  }
+]

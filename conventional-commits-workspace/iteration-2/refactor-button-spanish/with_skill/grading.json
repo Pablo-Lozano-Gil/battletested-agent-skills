@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Skill handles Spanish prompt appropriately",
+      "passed": true,
+      "evidence": "Skill processed Spanish prompt and generated appropriate commit message in English"
+    },
+    {
+      "text": "Commit message starts with 'refactor(' indicating code refactoring",
+      "passed": true,
+      "evidence": "Commit message starts with 'refactor(button):'"
+    },
+    {
+      "text": "Commit message includes scope 'button' in parentheses",
+      "passed": true,
+      "evidence": "Scope '(button)' present"
+    },
+    {
+      "text": "Description uses imperative mood",
+      "passed": true,
+      "evidence": "Description 'improve accessibility, performance, and maintainability' uses imperative mood"
+    },
+    {
+      "text": "Commit includes body detailing the specific improvements",
+      "passed": true,
+      "evidence": "Commit body includes details about ARIA roles, memoization, code reorganization, and test updates"
+    },
+    {
+      "text": "Follows Conventional Commits format",
+      "passed": true,
+      "evidence": "Message follows Conventional Commits format"
+    },
+    {
+      "text": "Git commit executed successfully",
+      "passed": true,
+      "evidence": "Git commands were generated and simulated; commit would have been executed if files existed"
+    }
+  ]
+}

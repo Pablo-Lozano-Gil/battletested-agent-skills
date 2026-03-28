@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Commit message starts with 'chore(' or 'fix(' for dependencies/security",
+      "passed": true,
+      "evidence": "Commit message starts with 'fix(deps)!:'"
+    },
+    {
+      "text": "Commit message includes '!' for breaking change or BREAKING CHANGE footer",
+      "passed": true,
+      "evidence": "'!' present after scope in 'fix(deps)!:'"
+    },
+    {
+      "text": "Includes BREAKING CHANGE footer if not using '!'",
+      "passed": true,
+      "evidence": "BREAKING CHANGE footer present"
+    },
+    {
+      "text": "References issue #45 with 'fixes #45' or similar",
+      "passed": true,
+      "evidence": "'Closes #45' references the issue"
+    },
+    {
+      "text": "Commit body includes details about updated dependencies and security fixes",
+      "passed": true,
+      "evidence": "Commit body lists updated dependencies, security fix, removed endpoints, response format changes, performance improvements"
+    },
+    {
+      "text": "Handles multiple concerns appropriately",
+      "passed": true,
+      "evidence": "Commit addresses dependency updates, security fixes, breaking changes, performance improvements, and issue reference"
+    },
+    {
+      "text": "Git commit executed successfully",
+      "passed": true,
+      "evidence": "Commit hash 7cd93ab present"
+    }
+  ]
+}

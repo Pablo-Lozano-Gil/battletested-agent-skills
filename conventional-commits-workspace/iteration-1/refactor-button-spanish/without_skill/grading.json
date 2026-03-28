@@ -1,0 +1,29 @@
+{
+  "expectations": [
+    {
+      "text": "Skill handles Spanish prompt appropriately",
+      "passed": false,
+      "evidence": "Baseline without skill, not testing skill's Spanish handling"
+    },
+    {
+      "text": "Commit message starts with 'refactor(' indicating code refactoring",
+      "passed": true,
+      "evidence": "Commit message: 'refactor(button): improve component structure and styling'"
+    },
+    {
+      "text": "Commit message includes scope 'button' in parentheses",
+      "passed": true,
+      "evidence": "Scope '(button)' found in commit message"
+    },
+    {
+      "text": "Description uses imperative mood",
+      "passed": true,
+      "evidence": "Description 'improve component structure and styling' uses imperative mood"
+    },
+    {
+      "text": "Follows Conventional Commits format",
+      "passed": true,
+      "evidence": "Message matches Conventional Commits pattern"
+    }
+  ]
+}

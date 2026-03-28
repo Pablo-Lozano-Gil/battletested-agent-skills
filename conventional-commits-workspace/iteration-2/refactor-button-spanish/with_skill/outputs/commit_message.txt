@@ -1,0 +1,6 @@
+refactor(button): improve accessibility, performance, and maintainability
+
+- Add ARIA roles for better accessibility
+- Implement memoization for performance optimization
+- Reorganize code structure for improved maintainability
+- Update associated test files

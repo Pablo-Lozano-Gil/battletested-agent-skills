@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Skill handles Spanish prompt appropriately",
+      "passed": false,
+      "evidence": "Baseline without skill, not testing skill's Spanish handling"
+    },
+    {
+      "text": "Commit message starts with 'refactor(' indicating code refactoring",
+      "passed": true,
+      "evidence": "Commit message starts with 'refactor(button):'"
+    },
+    {
+      "text": "Commit message includes scope 'button' in parentheses",
+      "passed": true,
+      "evidence": "Scope '(button)' present"
+    },
+    {
+      "text": "Description uses imperative mood",
+      "passed": true,
+      "evidence": "Description 'improve accessibility with ARIA roles, optimize performance with memoization, and reorganize code for maintainability; update tests' uses imperative mood"
+    },
+    {
+      "text": "Commit includes body detailing the specific improvements",
+      "passed": false,
+      "evidence": "No separate commit body; all details are in the description line"
+    },
+    {
+      "text": "Follows Conventional Commits format",
+      "passed": true,
+      "evidence": "Message follows Conventional Commits format"
+    },
+    {
+      "text": "Git commit executed successfully",
+      "passed": true,
+      "evidence": "Commit created successfully with hash f8d258b"
+    }
+  ]
+}

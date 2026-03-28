@@ -1,0 +1,11 @@
+[main 03f07da] fix(login): allow special characters in form submission
+ 1 file changed, 1 insertion(+)
+ create mode 100644 login-form-fix.md
+commit 03f07da413b26d950ad0d3a093268ab840a372db
+Author: Pablo Lozano <lozano.gil.pablo@gmail.com>
+Date:   Fri Mar 27 19:30:41 2026 +0100
+
+    fix(login): allow special characters in form submission
+
+ login-form-fix.md | 1 +
+ 1 file changed, 1 insertion(+)

@@ -1,0 +1,5 @@
+7cd93ab fix(deps)!: update dependencies and fix security vulnerabilities
+f8d258b refactor(button): improve accessibility with ARIA roles, optimize performance with memoization, and reorganize code for maintainability
+13056c6 fix(deps)!: update dependencies and fix security vulnerabilities
+c547b6f refactor(button): improve component structure and styling
+03f07da fix(login): allow special characters in form submission

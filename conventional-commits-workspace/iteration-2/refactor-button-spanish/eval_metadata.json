@@ -1,0 +1,6 @@
+{
+  "eval_id": 3,
+  "eval_name": "refactor-button-spanish",
+  "prompt": "haz un commit de los cambios en el componente Button que acabo de refactorizar. He mejorado la accesibilidad añadiendo roles ARIA, optimizado el rendimiento con memoización, y reorganizado el código para mayor mantenibilidad. Los cambios están en src/components/Button/Button.tsx y sus tests asociados. Usa conventional commits por favor.",
+  "assertions": []
+}

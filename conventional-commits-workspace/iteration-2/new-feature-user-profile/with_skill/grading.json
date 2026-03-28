@@ -1,0 +1,34 @@
+{
+  "expectations": [
+    {
+      "text": "Commit message starts with 'feat(' indicating new feature",
+      "passed": true,
+      "evidence": "Commit message starts with 'feat(user-profile):'"
+    },
+    {
+      "text": "Commit message includes scope 'user-profile' or similar in parentheses",
+      "passed": true,
+      "evidence": "Scope '(user-profile)' present"
+    },
+    {
+      "text": "Description uses imperative mood and summarizes the feature",
+      "passed": true,
+      "evidence": "Description 'add avatar upload and bio fields' uses imperative mood"
+    },
+    {
+      "text": "Commit includes a body with details about the implementation",
+      "passed": true,
+      "evidence": "Commit body includes detailed bullet points about avatar upload, bio fields, User model, API endpoints, frontend components"
+    },
+    {
+      "text": "Follows Conventional Commits format correctly",
+      "passed": true,
+      "evidence": "Message follows type(scope): description format with optional body"
+    },
+    {
+      "text": "Git commit executed successfully",
+      "passed": true,
+      "evidence": "Commit hash fef733b9b837d12ca9d029cd7e048943c679b195 present"
+    }
+  ]
+}

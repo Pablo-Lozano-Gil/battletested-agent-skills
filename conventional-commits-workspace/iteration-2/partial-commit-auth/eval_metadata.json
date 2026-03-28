@@ -1,0 +1,6 @@
+{
+  "eval_id": 5,
+  "eval_name": "partial-commit-auth",
+  "prompt": "I want to commit only the changes to the authentication middleware files, not the frontend updates. I've fixed a race condition in the JWT token validation and added rate limiting. The changes are in src/middleware/auth.js and src/middleware/rateLimit.js. Please create a conventional commit with detailed description of these security improvements.",
+  "assertions": []
+}

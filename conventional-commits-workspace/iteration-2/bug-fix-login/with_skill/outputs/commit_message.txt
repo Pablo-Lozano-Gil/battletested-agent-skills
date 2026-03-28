@@ -1,0 +1,1 @@
+fix(login): handle special characters in form submission

@@ -1,0 +1,78 @@
+{
+  "skill_name": "conventional-commits",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just fixed a bug in the login form where users couldn't submit with special characters. Can you commit these changes?",
+      "expected_output": "The skill should analyze the git diff, suggest type 'fix' with scope 'login', ask for confirmation, create a proper conventional commit message like 'fix(login): handle special characters in form submission', and execute git add + git commit.",
+      "files": [],
+      "expectations": [
+        "Commit message starts with 'fix(' indicating bug fix type",
+        "Commit message includes scope 'login' in parentheses",
+        "Commit message follows Conventional Commits format: type(scope): description",
+        "Description uses imperative mood",
+        "Skill analyzes git diff before suggesting type",
+        "Git commands include 'git add' and 'git commit'"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Please make a conventional commit for the new user profile feature I just implemented. The feature adds avatar upload functionality with image cropping and validation, plus bio fields with markdown support and character limits. I've updated the User model, added new API endpoints at /api/user/profile, and created frontend components in src/components/profile/. This is a new feature that should be well-documented for future reference.",
+      "expected_output": "Skill identifies new feature, suggests type 'feat' with scope 'user-profile', creates a commit with a descriptive body that captures the key aspects (avatar upload, bio fields, API endpoints, frontend components).",
+      "files": [],
+      "expectations": [
+        "Commit message starts with 'feat(' indicating new feature",
+        "Commit message includes scope 'user-profile' or similar in parentheses",
+        "Description uses imperative mood and summarizes the feature",
+        "Commit includes a body with details about the implementation",
+        "Follows Conventional Commits format correctly",
+        "Git commit executed successfully"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "haz un commit de los cambios en el componente Button que acabo de refactorizar. He mejorado la accesibilidad añadiendo roles ARIA, optimizado el rendimiento con memoización, y reorganizado el código para mayor mantenibilidad. Los cambios están en src/components/Button/Button.tsx y sus tests asociados. Usa conventional commits por favor.",
+      "expected_output": "Skill works in Spanish, identifies refactor changes, suggests type 'refactor' with scope 'button', creates a commit with body describing the improvements (ARIA roles, performance, maintainability).",
+      "files": [],
+      "expectations": [
+        "Skill handles Spanish prompt appropriately",
+        "Commit message starts with 'refactor(' indicating code refactoring",
+        "Commit message includes scope 'button' in parentheses",
+        "Description uses imperative mood",
+        "Commit includes body detailing the specific improvements",
+        "Follows Conventional Commits format",
+        "Git commit executed successfully"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I updated dependencies (React to v18.3, Node.js to 20.x) and fixed critical security vulnerabilities in the authentication middleware (CVE-2024-12345). This is a breaking change for API v1 because we removed deprecated endpoints and changed response formats. The update also includes performance improvements to the database layer. Commit with conventional commits and reference issue #45 which tracks this migration.",
+      "expected_output": "Skill handles multiple concerns: dependency update, security fix, breaking change, performance improvements, and issue reference. Should create commit with appropriate type, BREAKING CHANGE footer or '!', and 'fixes #45' with detailed body.",
+      "files": [],
+      "expectations": [
+        "Commit message starts with 'chore(' or 'fix(' for dependencies/security",
+        "Commit message includes '!' for breaking change or BREAKING CHANGE footer",
+        "Includes BREAKING CHANGE footer describing the breaking changes",
+        "References issue #45 with 'fixes #45' or similar",
+        "Commit body includes details about updated dependencies and security fixes",
+        "Handles multiple concerns appropriately",
+        "Git commit executed successfully"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "I want to commit only the changes to the authentication middleware files, not the frontend updates. I've fixed a race condition in the JWT token validation and added rate limiting. The changes are in src/middleware/auth.js and src/middleware/rateLimit.js. Please create a conventional commit with detailed description of these security improvements.",
+      "expected_output": "Skill handles partial commit request, focuses on authentication middleware changes, suggests appropriate type (likely 'fix' or 'perf'), creates commit with body describing the race condition fix and rate limiting addition.",
+      "files": [],
+      "expectations": [
+        "Skill acknowledges partial commit request",
+        "Commit message type appropriate for security/performance improvements",
+        "Scope includes 'auth' or 'middleware'",
+        "Description mentions race condition and rate limiting",
+        "Commit body provides details about the fixes",
+        "Git commands target specific files or directory",
+        "Git commit executed successfully"
+      ]
+    }
+  ]
+}
