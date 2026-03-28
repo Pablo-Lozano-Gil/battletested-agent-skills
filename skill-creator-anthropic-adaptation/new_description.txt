@@ -1,0 +1,1 @@
+<new_description>Create git commits with structured messages following Conventional Commits. Use when user requests to commit changes, make a commit, save code to git, or mentions semantic/structured/conventional commits. This skill analyzes changes and guides through proper commit message creation.</new_description>
