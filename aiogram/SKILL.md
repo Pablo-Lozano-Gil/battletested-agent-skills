@@ -4,7 +4,7 @@ description: Use when building Telegram bots with Python aiogram framework, espe
 license: MIT
 metadata:
   author: Pablo Lozano
-  version: "0.2"
+  version: "0.3"
   scope: [root, telegram]
   auto_invoke:
     - "When creating a Telegram bot using Python"
@@ -245,20 +245,21 @@ WEB_SERVER_HOST = "127.0.0.1"
 WEB_SERVER_PORT = 8080
 ```
 
-**5. :NEVER hardcode the Telegram bot TOKEN**
+**5. NEVER hardcode the Telegram bot TOKEN**
+
 Always use a library like python_dotenv for loading the Telegram bot token or any sensitive variable.
 ```python
 import os
 from dotenv import load_dotenv
 
-# Load sensitive and sets them in os.environ
+# Load sensitive and set them in os.environ
 load_dotenv() 
 
 # Get the relevant token
 TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 
 if not TOKEN:
-    raise ValueError("Telegram token not found. Cofigure the TELEGRAM_BOT_TOKEN variable.")
+    raise ValueError("Telegram bot token not found. Cofigure the TELEGRAM_BOT_TOKEN variable.")
 
 # Proceed with the rest of the implementation of the bot
 ```
