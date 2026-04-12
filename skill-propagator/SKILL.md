@@ -5,7 +5,7 @@ description: >
   Trigger: When updating skill metadata (metadata.scope/metadata.auto_invoke), regenerating Auto-invoke tables, or running skill-propagator/assets/propagate.sh (including --dry-run/--scope).
 license: Apache-2.0
 metadata:
-  author: Pablo Lozano [Based on Prowler's [skill-sync](https://github.com/prowler-cloud/prowler/tree/master/skills/skill-propagator), licensed under Apache-2.0]
+  author: Victor Arias [Based on Pablo Lozano's [skill-propagator](https://github.com/Pablo-Lozano-Gil/battletested-agent-skills/tree/main/skill-propagator), licensed under Apache-2.0]
   version: "1.0"
   scope: [root]
   auto_invoke:
@@ -30,7 +30,7 @@ Each skill that should appear in Auto-invoke sections needs these fields in `met
 metadata:
   author: {Author name}
   version: "1.0"
-  scope: [ui]                                    # Which AGENTS.md: ui, api, sdk, root
+  scope: [ui]                                    # Which AGENTS.md: ui, api, sdk, root ...
 
   # Option A: single action
   auto_invoke: "Creating/modifying components"
@@ -50,6 +50,7 @@ metadata:
 | `api` | `api/AGENTS.md` |
 | `sdk` | `{project-name}/AGENTS.md` |
 | `mcp_server` | `mcp_server/AGENTS.md` |
+| `db` | `db/AGENTS.md` |
 
 Skills can have multiple scopes: `scope: [ui, api]`
 
