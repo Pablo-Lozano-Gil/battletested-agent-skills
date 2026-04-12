@@ -7,13 +7,12 @@ license: Apache-2.0
 metadata:
   author: gentleman-programming
   version: "1.0"
+  scope: [{scopes}]
 ---
-# {skill-name}
 
 ## When to Use
 
 Use this skill when:
-
 - {Condition 1}
 - {Condition 2}
 - {Condition 3}
@@ -40,10 +39,10 @@ Use this skill when:
 
 ## Decision Tree
 
-```text
+```
 {Question 1}? → {Action A}
 {Question 2}? → {Action B}
- Otherwise    → {Default action}
+Otherwise    → {Default action}
 ```
 
 ---

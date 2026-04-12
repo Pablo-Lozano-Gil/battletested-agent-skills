@@ -1,25 +1,28 @@
 ---
 name: skill-creator
-description: Creates new AI agent skills following the Agent Skills spec. Trigger: When user asks to create a new skill, add agent instructions, or document patterns for AI.
+description: >
+  Creates new AI agent skills following the Agent Skills spec.
+  Trigger: When user asks to create a new skill, add agent instructions, or document patterns for AI.
 license: Apache-2.0
 metadata:
-  author: Pablo Lozano [Based on Prowler's [skill-creator](https://github.com/prowler-cloud/prowler/tree/master/skills/skill-creator), licensed under Apache-2.0]
+  author: Victor Arias [Based on Prowler's [skill-creator](https://github.com/prowler-cloud/prowler/tree/master/skills/skill-creator), licensed under Apache-2.0]
   version: "1.0"
+  scope: [root]
+  auto_invoke:
+    - "Creating a new AI agent skill"
+    - "Modifying skill metadata or structure"
 allowed-tools: Read, Edit, Write, Glob, Grep, Bash, WebFetch, WebSearch, Task
 ---
-# Skill Creator
 
 ## When to Create a Skill
 
 Create a skill when:
-
 - A pattern is used repeatedly and AI needs guidance
 - Project-specific conventions differ from generic best practices
 - Complex workflows need step-by-step instructions
 - Decision trees help AI choose the right approach
 
 **Don't create a skill when:**
-
 - Documentation already exists (create a reference instead)
 - Pattern is trivial or self-explanatory
 - It's a one-off task
@@ -28,8 +31,8 @@ Create a skill when:
 
 ## Skill Structure
 
-```text
-{skill-name}/
+```
+skills/{skill-name}/
 ├── SKILL.md              # Required - main skill file
 ├── assets/               # Optional - templates, schemas, examples
 │   ├── template.py
@@ -42,7 +45,7 @@ Create a skill when:
 
 ## SKILL.md Template
 
-````markdown
+```markdown
 ---
 name: {skill-name}
 description: >
@@ -71,20 +74,21 @@ metadata:
 ```bash
 {Common commands}
 ```
+
 ## Resources
 
 - **Templates**: See [assets/](assets/) for {description}
 - **Documentation**: See [references/](references/) for local docs
-````
+```
 
 ---
 
 ## Naming Conventions
 
 | Type | Pattern | Examples |
-| ------ | --------- | ---------- |
+|------|---------|----------|
 | Generic skill | `{technology}` | `pytest`, `playwright`, `typescript` |
-| Project-specific skill | `{component}` | `api`, `ui`, `sdk-check` |
+| Project-specific | `{project}-{component}` | `contoso-api`, `contoso-ui`, `contoso-sdk-check` |
 | Testing skill | `test-{component}` | `test-sdk`, `test-api` |
 | Workflow skill | `{action}-{target}` | `skill-creator`, `jira-task` |
 
@@ -93,27 +97,23 @@ metadata:
 ## Decision: assets/ vs references/
 
 ```text
-
 Need code templates?        → assets/
 Need JSON schemas?          → assets/
 Need example configs?       → assets/
 Link to existing docs?      → references/
 Link to external guides?    → references/ (with local path)
-
 ```
 
 **Key Rule**: `references/` should point to LOCAL files (`docs/developer-guide/*.mdx`), not web URLs.
 
 ---
 
-## Decision: Project-Specific vs Generic
+## Decision: Prowler-Specific vs Generic
 
 ```text
-
 Patterns apply to ANY project?     → Generic skill (e.g., pytest, typescript)
-Patterns are project-specific?     → {project-name}-{skill-name} skill
-Generic skill needs project info?  → Add references/ pointing to project docs
-
+Patterns are Prowler-specific?     → prowler-{name} skill
+Generic skill needs Prowler info?  → Add references/ pointing to Prowler docs
 ```
 
 ---
@@ -121,10 +121,10 @@ Generic skill needs project info?  → Add references/ pointing to project docs
 ## Frontmatter Fields
 
 | Field | Required | Description |
-| ------- | ---------- | ------------- |
+|-------|----------|-------------|
 | `name` | Yes | Skill identifier (lowercase, hyphens) |
 | `description` | Yes | What + Trigger in one block |
-| `license` | Yes | Look at the license of the project (LICENSE.md) or Apache-2.0 if not found |
+| `license` | Yes | Always `Apache-2.0` for Prowler |
 | `metadata.author` | Yes | {Author name} |
 | `metadata.version` | Yes | Semantic version as string |
 
@@ -133,14 +133,12 @@ Generic skill needs project info?  → Add references/ pointing to project docs
 ## Content Guidelines
 
 ### DO
-
 - Start with the most critical patterns
 - Use tables for decision trees
 - Keep code examples minimal and focused
 - Include Commands section with copy-paste commands
 
 ### DON'T
-
 - Add Keywords section (agent searches frontmatter, not body)
 - Duplicate content from existing docs (reference instead)
 - Include lengthy explanations (link to docs)
